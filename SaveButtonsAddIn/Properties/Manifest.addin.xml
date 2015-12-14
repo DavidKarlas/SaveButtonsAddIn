@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-	<Runtime>
-	</Runtime>
+	<Extension path="/MonoDevelop/Ide/CommandBar">
+		<ItemSet id="MyCommandsBar">
+			<CommandItem id="MonoDevelop.Ide.Commands.FileCommands.Save" />
+			<CommandItem id="MonoDevelop.Ide.Commands.FileCommands.SaveAll" />
+		</ItemSet>
+	</Extension>
+	<Extension path="/MonoDevelop/Ide/StartupHandlers">
+		<Class class="SaveButtonsAddIn.StartupHandler" />
+	</Extension>
 </ExtensionModel>
